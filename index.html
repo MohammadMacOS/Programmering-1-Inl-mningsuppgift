@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Checkout</title>
+</head>
+<body> 
+                     <h1>Shopping cart</h1>
+
+<div class="grid-container1">
+    <div class="grid-item1">Bokus</div>
+    <div class="grid-item1"> <input type="text" name="Search" placeholder="Search books..." size="50" id="search"></div>
+    <div class="grid-item1"><i class="fas fa-shopping-cart" id="open" onclick="openMenu()"></i><Button onclick="openMenu()" id="openMenu">Checkout</Button>
+    </div>
+</div>
+<div class="dropdown">
+        <div id="dropdown" class="dropdown-content">
+            <h2>Your cart</h2>
+            <div class="grid-container3">
+                <div class="grid-item1 item1"> 
+                    <div id="showBook1">
+                    Bok1 
+                    <label for="number-of-book1"></label>
+                    <input type="number" min="0" id="number-of-book1" value="0" onchange="changeSumBook1()">
+                    <img src="./Book1.JPG" id="Book1">
+                <span id="result-book-1"></span>
+            </div>
+            </div>
+                <div class="grid-item1 item2">
+                    <div id="showBook2"> Bok2
+                     <label for="number-of-book-2">
+                    
+                     </label><input type="number" id="number-of-book-2" value="0" min="0" onchange="changeSumBook2()">
+                     <img src="./Book2.jpg" id="Book2">
+                    
+                     <span id="result-book-2"></span> 
+                    </div>
+                </div>
+                <div class="grid-item1 item3">
+                    <div id="ShowBook3">Bok3 
+                    <label for="number-of-book-3"></label>
+                    <input type="number" id="number-of-book-3" value="0" min="0" onchange="changeSumBook3()">
+                    <img src="./Book3.jpg" id="Book3">
+                    <span id="result-book-3"></span>
+            </div>
+        </div>
+    </div> 
+            <div class="cart-content">
+            </div>
+            <div id="free-frieght"></div>
+            <div id="total">
+                <strong> Books : <span id="total-all-books">
+                </span> Sum = ( <span id="sum-of-all-books"></span> )</strong>
+                <div class="floatright2">
+                    <span id="sum-1"></span>
+                </div>
+            </div>
+            <button onclick="closeMenu()">Close</button>
+            <button onclick="ckeckout()">Checkout</button>
+        </div>
+    </div>
+<div class="Navbar">
+    <a href="#Våra böcker">Våra böcker</a>
+    <a href="#Nyheter">Nyheter</a>
+    <a href="#Topplistor">Topplistor</a>
+    <a href="#Bokus play">Bokus play</a>
+    <a href="#Erbjudande">Erbjudande</a>
+</div>
+<div class="grid-container2">
+    <div class="grid-item2"><h1>Paperbacks</h1></div>
+    <div class="grid-item2"></div>
+    <div class="grid-item2"></div>
+
+    <div class="grid-container3">
+        <img src="./Book1.JPG" id="Book1">
+        <p>Bok2 <strong>59kr</strong></p>
+         <img src="./Book3.jpg" id="Book3">
+                 <p>Bok1 <strong>59kr</strong></p> 
+        <img src="./Book2.jpg" id="Book2"> 
+        <p>Bok3 <strong>49kr</strong></p> 
+
+
+
+
+</div> 
+<br> <br>
+<br>
+<div class="grid-container4">
+    <button  onclick="addBookOneToCart()" id="Buy">Köp</button> 
+    <button  onclick="addBookTwoToCart()" id="Click">Köp</button>
+    <button onclick="addBookThreeToCart()" id="Button">Köp</button>
+    </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
